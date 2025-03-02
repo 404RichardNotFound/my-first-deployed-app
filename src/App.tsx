@@ -2,6 +2,8 @@ import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
+// I Added A Password Confirmation Field To The Form
+// I Also Added A Refinement To Check If The Passwords Match
 
 const inputSchema = z.object({
   email: z.string().email(),
