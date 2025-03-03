@@ -53,22 +53,22 @@ const App  = () =>{
         borderRadius: '5px'
         }
         }>
-        <input {...register("email")} style={{padding: '7px', borderRadius: '5px', border: '1px solid #ccc',}}  placeholder="Email" />
+        <input {...register("email")} style={{padding: '7px',backgroundColor: '#FEFCF7', borderRadius: '5px', border: '1px solid #ccc',}}  placeholder="Email" />
         {errors.email && <p style={{color: 'red'}} >{errors.email.message}</p>}
 
-        <input {...register("firstName")} style={{padding: '7px',borderRadius: '5px' , border: '1px solid #ccc',}} placeholder="First Name" />
+        <input {...register("firstName")} style={{padding: '7px',backgroundColor: '#FEFCF7', borderRadius: '5px' , border: '1px solid #ccc',}} placeholder="First Name" />
         {errors.firstName && <p style={{color: 'red'}} >{errors.firstName.message}</p>}
 
-        <input {...register("lastName")} style={{padding: '7px',borderRadius: '5px', border: '1px solid #ccc',}} placeholder="Last Name" />
+        <input {...register("lastName")} style={{padding: '7px',backgroundColor: '#FEFCF7', borderRadius: '5px', border: '1px solid #ccc',}} placeholder="Last Name" />
         {errors.lastName && <p style={{color: 'red'}} >{errors.lastName.message}</p>}
 
-        <input {...register("password")} style={{padding: '7px', borderRadius: '5px', border: '1px solid #ccc',}} placeholder="Password" />
+        <input {...register("password")} style={{padding: '7px',backgroundColor: '#FEFCF7', borderRadius: '5px', border: '1px solid #ccc',}} placeholder="Password" />
         {errors.password && <p style={{color: 'red'}} >{errors.password.message}</p>}
 
-        <input {...register("confirmPassword")} style={{padding: '7px',borderRadius: '5px', border: '1px solid #ccc',}} placeholder="Confirm Password" />
+        <input {...register("confirmPassword")} style={{padding: '7px',borderRadius: '5px',backgroundColor: '#FEFCF7', border: '1px solid #ccc',}} placeholder="Confirm Password" />
         {errors.confirmPassword && <p style={{color: 'red'}} >{errors.confirmPassword.message}</p>}
 
-        <button style={{padding: '7px', marginTop: '10px', marginLeft: '110px', width: '80px'}} type="submit">Submit</button>
+        <button style={{padding: '7px', marginTop: '10px', marginLeft: '110px', width: '80px',backgroundColor: 'grey',color: 'white', border: '1px solid white', borderRadius: '5px' }} type="submit">Submit</button>
       </form>
     </div>
   )
